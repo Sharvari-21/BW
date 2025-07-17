@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  admin_frontend:
+    build:
+      context: ./admin_frontend
+    ports:
+      - "3001:5173"
+    env_file:
+      - ./admin_frontend/.env
+
+  volunteer_frontend:
+    build:
+      context: ./volunteer_frontend
+    ports:
+      - "3002:5173"
+    env_file:
+      - ./volunteer_frontend/.env
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./backend/.env
+
+  flyer_backend:
+    build:
+      context: ./flyer_backend
+    ports:
+      - "5001:5000"
+    env_file:
+      - ./flyer_backend/.env  # ✅ FIXED: indented properly
