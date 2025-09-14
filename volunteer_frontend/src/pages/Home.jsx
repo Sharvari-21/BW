@@ -8,11 +8,11 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Beach Cleanup Platform - Admin Panel</h1>
+      <h1>Beach Cleanup Platform - Volunteer Panel</h1>
       
       {!isAuthenticated ? (
         <div>
-          <p>Welcome to the Beach Cleanup Platform Admin Portal. Please login or signup to access admin features.</p>
+          <p>Welcome to the Beach Cleanup Platform Volunteer Portal. Please login or signup to access the features.</p>
           
           <div style={{ marginTop: '30px' }}>
             <h3>Get Started</h3>
@@ -26,7 +26,7 @@ const Home = () => {
                   borderRadius: '4px',
                   cursor: 'pointer'
                 }}>
-                  Login to Admin Panel
+                  Login
                 </button>
               </Link>
               
@@ -39,7 +39,7 @@ const Home = () => {
                   borderRadius: '4px',
                   cursor: 'pointer'
                 }}>
-                  Create Admin Account
+                  Create Account
                 </button>
               </Link>
             </div>
@@ -47,52 +47,10 @@ const Home = () => {
         </div>
       ) : (
         <div>
-          <p>Welcome back! Use the navigation to access admin features.</p>
-          
-          <div style={{ marginTop: '30px' }}>
-            <h3>Quick Access</h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginTop: '20px', maxWidth: '300px' }}>
-              <Link to="/dashboard">
-                <button style={{
-                  width: '100%',
-                  padding: '12px',
-                  backgroundColor: '#17a2b8',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '4px',
-                  cursor: 'pointer'
-                }}>
-                  Go to Dashboard
-                </button>
-              </Link>
-              
-              <Link to="/events">
-                <button style={{
-                  width: '100%',
-                  padding: '12px',
-                  backgroundColor: '#ffc107',
-                  color: '#212529',
-                  border: 'none',
-                  borderRadius: '4px',
-                  cursor: 'pointer'
-                }}>
-                  Manage Events
-                </button>
-              </Link>
-            </div>
-          </div>
+          <p>Welcome back! Use the navigation to access volunteer features.</p>
         </div>
       )}
       
-      <div style={{ marginTop: '40px' }}>
-        <h3>Platform Features</h3>
-        <ul>
-          <li>Event Management - Create, update, and delete cleanup events</li>
-          <li>Dashboard - Overview of all events and activities</li>
-          <li>Volunteer Management - Track and manage volunteer participation</li>
-          <li>Impact Tracking - Monitor environmental impact of cleanup activities</li>
-        </ul>
-      </div>
     </div>
   );
 };
