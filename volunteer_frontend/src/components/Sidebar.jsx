@@ -25,7 +25,7 @@ const Sidebar = () => {
       padding: '20px 0'
     }}>
       <div style={{ padding: '0 20px' }}>
-        <h4>Admin Panel</h4>
+        <h4>Volunteer Panel</h4>
       </div>
       
       <nav style={{ marginTop: '20px' }}>
