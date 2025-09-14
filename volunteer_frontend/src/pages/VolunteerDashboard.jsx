@@ -1,5 +1,6 @@
 // VolunteerDashboard.jsx
 import React, { useState, useEffect, useCallback } from 'react';
+import Chatbot from '../components/Chatbot';
 import axios from 'axios';
 import {
     BarChart, Bar, PieChart, Pie, LineChart, Line,
@@ -436,6 +437,7 @@ const VolunteerDashboard = () => {
                     </div>
                 </div>
             </div>
+            <div><Chatbot></Chatbot></div>
         </div>
     );
 };
