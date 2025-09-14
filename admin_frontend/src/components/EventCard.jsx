@@ -48,7 +48,7 @@ const EventCard = ({ event, onEdit, onDelete }) => {
             style={{
               width: '100%',
               height: '100%',
-              objectFit: 'cover'
+              objectFit: 'contain'
             }}
           />
         </div>
